@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        
+
+        section {
+            margin: 20px;
+        }
+
+        .hotel-info {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <header>
+        <h1>Our Hotel</h1>
+        <a href="https://t.me/+e2QhlG3JvIIzMzli/"/><img src="data:image/png;base64,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" alt="" width="50px" height="50px"/>
+        <a href="https://www.youtube.com"/> <img src="https://img.freepik.com/free-vector/youtube-player-icon-with-flat-design_23-2147837753.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1703721600&semt=ais" alt="" width="50px" height="50px"/>
+       
+    </header>
+
+    <section class="hotel-info">
+        <h2>Welcome to Our Hotel</h2>
+        <p>Experience luxury and comfort at our hotel. Book your stay today!</p>
+    </section>
+    <footer>
+        <h3>Phone number</h3>: +998938750048 <br>
+        &copy; 2024 Our Hotel. All rights reserved.
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
